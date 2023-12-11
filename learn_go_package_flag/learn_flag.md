@@ -131,9 +131,9 @@ func test() { // 学到一个新的知识点
 }
 
 func main() {
-	// first() //go run main.go -name="rose" -> rose
+	// first()   //go run main.go -name="rose" -> rose
 	// second()  //go run main.go -age=10 -> 10
-	third() // go run main.go -hobby="play game,football" -> [play game football]，这是首先将hobby加入逗号拼接，返回play game,football，再以逗号切分，返回play game football再append到Hobby结构体即string切片中
-	// test()   // -> hi
+	third()      // go run main.go -hobby="play game,football" -> [play game football]，这是首先将hobby加入逗号拼接，返回play game,football，再以逗号切分，返回play game football再append到Hobby结构体即string切片中
+	// test()    // -> hi
 }
 ```
