@@ -136,5 +136,12 @@ func main() {
 	third()      // go run main.go -hobby="play game,football" -> [play game football]，这是首先将hobby加入逗号拼接，返回play game,football，再以逗号切分，返回play game football再append到Hobby结构体即string切片中
 	// test()    // -> hi
 	fmt.Println(flag.Args(), flag.NArg(), flag.NFlag()) //go run hello -hobby="football,play game" aa bb -> [aa bb] 2 1：分别打印flag之外的参数，flag之外的参数数量，flag参数的数量
+
+    //使用 os.Args 获取命令行参数
+	for k, v := range os.Args { //go run hello 1 a -c=3 -> 1 1
+		fmt.Println(k, v)       //                         2 a
+	}                           //                         3 -c=3
+	fmt.Println(os.Args[0]) ///var/folders/qb/6c92px3n6zl04zrnk60fjcc80000gn/T/go-build911452927/b001/exe/hello
+	fmt.Println(os.Args[1]) //1
 }
 ```
