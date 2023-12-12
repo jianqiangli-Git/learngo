@@ -139,7 +139,7 @@ func main() {
 
     //使用 os.Args 获取命令行参数
 	for k, v := range os.Args { //go run hello 1 a -c=3 -> 1 1
-		fmt.Println(k, v)       //                         2 a
+		fmt.Println(k, v)      //                         2 a
 	}                           //                         3 -c=3
 	fmt.Println(os.Args[0]) ///var/folders/qb/6c92px3n6zl04zrnk60fjcc80000gn/T/go-build911452927/b001/exe/hello
 	fmt.Println(os.Args[1]) //1
